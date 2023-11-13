@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/Navbar'
+import Textutils from './components/Textutils'
+import { useState } from 'react';
 
-function App() {
+export default function App() {
+  const [btnText,setBtnText]=useState("Enable dark mode");
+  const [color,setcolor]=useState({
+    color:'black'
+  })
+  const modechange=()=>{
+    if(btnText==="Enable dark mode"){
+      setBtnText("Disable")
+      setcolor({color:'white'})
+      document.body.style.backgroundColor='black'
+    }
+    else{
+      setBtnText("Enable dark mode")
+      setcolor({color:'black'})
+      document.body.style.backgroundColor='white'
+    }
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Navbar value={btnText} mode={modechange}/>
+    <Textutils onclick={modechange} style={color}/>
+    
+    </>
+  )
 }
-
-export default App;
