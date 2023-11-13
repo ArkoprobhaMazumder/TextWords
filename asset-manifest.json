@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TextWords/static/css/main.e6c13ad2.css",
+    "main.js": "/TextWords/static/js/main.7f4ab581.js",
+    "static/js/787.fb9a5fa6.chunk.js": "/TextWords/static/js/787.fb9a5fa6.chunk.js",
+    "index.html": "/TextWords/index.html",
+    "main.e6c13ad2.css.map": "/TextWords/static/css/main.e6c13ad2.css.map",
+    "main.7f4ab581.js.map": "/TextWords/static/js/main.7f4ab581.js.map",
+    "787.fb9a5fa6.chunk.js.map": "/TextWords/static/js/787.fb9a5fa6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.7f4ab581.js"
+  ]
+}
